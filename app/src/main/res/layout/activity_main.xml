@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLoadModel"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:text="loadModel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="180dip"
+                android:layout_height="60dip"
+                android:text="left" />
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="180dip"
+                android:layout_height="60dip"
+                android:layout_marginLeft="10dp"
+                android:text="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTop"
+                android:layout_width="180dip"
+                android:layout_height="60dip"
+                android:text="top" />
+
+            <Button
+                android:id="@+id/btnDown"
+                android:layout_width="180dip"
+                android:layout_height="60dip"
+                android:layout_marginLeft="10dp"
+                android:text="down" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
